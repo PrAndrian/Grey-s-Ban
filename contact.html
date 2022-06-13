@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- style ------------------------------------------------>
+    <link rel="stylesheet" href="css/style_contact.css" />
+    <link rel="stylesheet" href="css/style_index.css" />
+    <!-- Bootstrap ------------------------------------------------>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <title>Contact</title>
+  </head>
+  <body>
+    <!--NAVBAR------------------------------------------------>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Grey's-Ban</a>
+        <div class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html"
+                >Nos produits</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Notre coeur de métier</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Notre équipe</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nos partenaires</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--CONTACT------------------------------------------------>
+    <div class="container mb-4">
+      <form action="POST">
+        <h3 class="text-center">Contactez-nous</h3>
+        <div class="mb-3">
+          <label for="nom" class="form-label">Nom :*</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nom"
+            placeholder="Doe"
+            require
+          />
+        </div>
+        <div class="mb-3">
+          <label for="prenomm" class="form-label">Prénom :*</label>
+          <input
+            type="text"
+            class="form-control"
+            id="prenom"
+            placeholder="John"
+            require
+          />
+        </div>
+        <div class="mb-3">
+          <label for="prof" class="form-label">Profession :</label>
+          <input
+            type="text"
+            class="form-control"
+            id="prof"
+            placeholder="Front Dev"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="note" class="form-label">Notes : </label>
+          <textarea class="form-control" id="note" rows="3"></textarea>
+        </div>
+        <div class="d-grid">
+          <button type="submit" value="Submit" class="btn btn-outline-dark">
+            Envoyer
+          </button>
+        </div>
+      </form>
+    </div>
+    <!--MAP&INFO------------------------------------------------>
+    <div class="container">
+      <h3 class="text-center">Adresse :</h3>
+      <p>Grey's Ban</p>
+      <p>Wojo Paris Champs-Elysées</p>
+      <p>Etage 2</p>
+      <p>16 Rue Washington,</p>
+      <p>75008 Paris</p>
+      <div class="containermap">
+        <iframe
+          class="mb-4"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.236856305226!2d2.300352415915184!3d48.8727611076483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fc188f09101%3A0x875f216a8cb77db0!2s16%20Rue%20Washington%2C%2075008%20Paris!5e0!3m2!1sfr!2sfr!4v1649159896351!5m2!1sfr!2sfr"
+          width="1920"
+          height="600"
+          style="border: 1px solid black"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+    <!--FOOTER------------------------------------------------>
+    <footer class="d-flex justify-content-between">
+      <div class="footer">&copy; 2021 lgc, Inc. - Privacy Terms</div>
+      <div><a id="backtop" href="#">Back to top</a></div>
+    </footer>
+  </body>
+</html>

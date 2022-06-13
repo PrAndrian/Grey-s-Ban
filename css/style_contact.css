@@ -1,0 +1,12 @@
+h3 {
+  text-decoration: underline;
+}
+.containermap {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-link {
+  border-left: 5px solid grey;
+  line-height: 2px;
+}
