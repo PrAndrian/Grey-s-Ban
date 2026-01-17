@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- style -->
     <link rel="stylesheet" href="css/style_index.css" />
-    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -18,29 +16,29 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <title>Accueil</title>
+    <title>Grey's-Ban | Nouvelle vision</title>
   </head>
   <body>
-    <!--NAVBAR---------------------------------------------->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Grey's-Ban</a>
-        <div class="collapse navbar-collapse justify-content-end">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Nos produits</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Notre coeur de métier</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Notre équipe</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Nos partenaires</a>
-            </li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+      <div class="container-fluid px-lg-5">
+        <a class="navbar-brand fw-bold" href="#">Grey's-Ban</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+          <ul class="navbar-nav gap-lg-3">
+            <li class="nav-item"><a class="nav-link" href="#collections">Collections</a></li>
+            <li class="nav-item"><a class="nav-link" href="#expertise">Expertise</a></li>
+            <li class="nav-item"><a class="nav-link" href="#atelier">Atelier</a></li>
+            <li class="nav-item"><a class="nav-link" href="#avis">Avis</a></li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
@@ -48,91 +46,217 @@
         </div>
       </div>
     </nav>
-    <!--HERO--------------------->
-    <div class="hero"></div>
-    <!--PRODUIT POP------------------------------------------------>
-    <h1 class="text-center p-5">Nos produits les plus populaires</h1>
-    <div class="container">
-      <div class="row row-cols-1 row-cols-md-4 g-4">
-        <div class="col">
-          <div class="card border-dark">
-            <div class="bg-transparent text-center p-2">Lunette de soleil</div>
-            <div class="card-body d-flex justify-content-center">
-              <img class="img-fluid" src="img/soleil.jpg" alt="kale" />
-            </div>
-            <div class="card-footer text-center text-white bg-dark">
-              Voir tous les Produits
-            </div>
+
+    <header class="hero">
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <span class="hero__tag">Design français · Artisanat moderne</span>
+        <h1>Une nouvelle vision du style & du confort.</h1>
+        <p>
+          Des montures signature, une protection solaire de pointe et un
+          accompagnement personnalisé pour voir le monde autrement.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn-light btn-lg" href="#collections">Découvrir la collection</a>
+          <a class="btn btn-outline-light btn-lg" href="#atelier">Prendre rendez-vous</a>
+        </div>
+        <div class="hero__stats">
+          <div>
+            <h4>48h</h4>
+            <span>Livraison express</span>
+          </div>
+          <div>
+            <h4>98%</h4>
+            <span>Clients ravis</span>
+          </div>
+          <div>
+            <h4>120+</h4>
+            <span>Montures exclusives</span>
           </div>
         </div>
-        <div class="col">
-          <div class="card border-dark">
-            <div class="bg-transparent text-center p-2">Lunette de vue</div>
-            <div class="card-body text-dark d-flex justify-content-center">
-              <img
-                class="img-fluid"
-                src="img/lunettes-vue-homme.jpg"
-                alt="kale"
-              />
-            </div>
-            <div class="card-footer text-center text-white bg-dark">
-              Voir tous les Produits
+      </div>
+    </header>
+
+    <section id="collections" class="section">
+      <div class="container">
+        <div class="section__header">
+          <h2>Collections signatures</h2>
+          <p>Choisissez une silhouette qui reflète votre personnalité.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="collection-card">
+              <img src="img/soleil.jpg" alt="Lunette de soleil" />
+              <div class="collection-card__content">
+                <h5>Lunettes solaires</h5>
+                <p>Verres polarisés & protection UV 400.</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card border-dark">
-            <div class="bg-transparent text-center p-2">
-              Lunette effet miroir
-            </div>
-            <div class="card-body text-dark d-flex justify-content-center">
-              <img class="img-fluid" src="img/polar2.png" alt="kale" />
-            </div>
-            <div class="card-footer text-center text-white bg-dark">
-              Voir tous Produits
+          <div class="col-md-6 col-lg-3">
+            <div class="collection-card">
+              <img src="img/lunettes-vue-homme.jpg" alt="Lunette de vue" />
+              <div class="collection-card__content">
+                <h5>Vue essentielle</h5>
+                <p>Des montures légères pour le quotidien.</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card border-dark">
-            <div class="bg-transparent text-center p-2">
-              Lunette Kaleidoscope
+          <div class="col-md-6 col-lg-3">
+            <div class="collection-card">
+              <img src="img/polar2.png" alt="Lunette effet miroir" />
+              <div class="collection-card__content">
+                <h5>Effet miroir</h5>
+                <p>Reflets subtils, allure audacieuse.</p>
+              </div>
             </div>
-            <div class="card-body text-dark d-flex justify-content-center">
-              <img class="img-fluid" src="img/kale.png" alt="kale" />
-            </div>
-            <div class="card-footer text-center text-white bg-dark">
-              Voir tous Produits
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="collection-card">
+              <img src="img/kale.png" alt="Lunette Kaleidoscope" />
+              <div class="collection-card__content">
+                <h5>Kaleidoscope</h5>
+                <p>Couleurs vibrantes, finitions premium.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!--HOMME&FEMME------------------------------------------------>
-    <div class="d-flex flex-column mt-5">
-      <div class="container d-flex flex-column align-items-center">
-        <img
-          id="img__homme"
-          class="img-fluid"
-          src="img/arton4Homme.png"
-          alt=""
-        />
-        <h5 class="text-center mb-4 mt-2">Collection Homme</h5>
+    </section>
+
+    <section id="expertise" class="section section--split">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="split__content">
+              <span>Notre coeur de métier</span>
+              <h2>Une précision optique au service de votre confort.</h2>
+              <p>
+                Chez Grey's-Ban, chaque monture est testée pour garantir
+                l'équilibre parfait entre ergonomie, esthétisme et performance.
+                Nos experts opticiens vous accompagnent de la sélection des verres
+                au réglage final.
+              </p>
+              <ul>
+                <li>Scan morphologique 3D en boutique.</li>
+                <li>Assemblage artisanal et finitions sur-mesure.</li>
+                <li>Garanties premium sur toutes les collections.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="split__image">
+              <img src="img/arton4Homme.png" alt="Collection Homme" />
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="container d-flex flex-column align-items-center">
-        <img
-          id="img__femme"
-          class="img-fluid justify-content-center"
-          src="img/arton4.jpg"
-          alt=""
-        />
-        <h5 class="text-center mb-4 mt-2">Collection Femme</h5>
+    </section>
+
+    <section id="atelier" class="section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 order-lg-2">
+            <div class="split__content">
+              <span>Notre atelier</span>
+              <h2>Des créations pensées pour elle et lui.</h2>
+              <p>
+                Des lignes contemporaines, des matériaux écoresponsables et une
+                palette inspirée par la lumière naturelle. Chaque collection est
+                conçue pour sublimer votre personnalité.
+              </p>
+              <div class="split__badges">
+                <span>Collection Femme</span>
+                <span>Collection Homme</span>
+                <span>Éditions limitées</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="split__image">
+              <img src="img/arton4.jpg" alt="Collection Femme" />
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <!--FOOTER------------------------------------------------>
-    <footer class="d-flex justify-content-between">
-      <div class="footer">&copy; 2021 lgc, Inc. - Privacy Terms</div>
-      <div><a id="backtop" href="#">Back to top</a></div>
+    </section>
+
+    <section id="avis" class="section section--highlight">
+      <div class="container">
+        <div class="section__header">
+          <h2>Ils parlent de nous</h2>
+          <p>Une expérience fluide de la première visite au dernier ajustement.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="testimonial">
+              <p>
+                “Le service est incroyable. Les conseils sont précis et les
+                montures subliment vraiment le visage.”
+              </p>
+              <span>Camille · Paris</span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimonial">
+              <p>
+                “Livraison rapide et qualité au rendez-vous. Je recommande sans
+                hésiter.”
+              </p>
+              <span>Idriss · Lyon</span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimonial">
+              <p>
+                “Une expérience premium du début à la fin. Les verres sont
+                parfaits.”
+              </p>
+              <span>Léa · Marseille</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--cta">
+      <div class="container">
+        <div class="cta">
+          <div>
+            <h2>Prêt à transformer votre regard ?</h2>
+            <p>
+              Réservez une consultation personnalisée et découvrez les montures
+              qui vous ressemblent.
+            </p>
+          </div>
+          <a class="btn btn-dark btn-lg" href="contact.html">Nous contacter</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div>
+            <h5>Grey's-Ban</h5>
+            <p>© 2024 Grey's-Ban. Tous droits réservés.</p>
+          </div>
+          <div class="footer__links">
+            <a href="#collections">Collections</a>
+            <a href="#expertise">Expertise</a>
+            <a href="#atelier">Atelier</a>
+            <a href="#avis">Avis</a>
+          </div>
+          <div>
+            <span>Suivez-nous</span>
+            <div class="footer__social">
+              <a href="#">Instagram</a>
+              <a href="#">Pinterest</a>
+              <a href="#">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
